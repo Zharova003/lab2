@@ -38,29 +38,6 @@ const char *MENU_TESTS[] = {"0. Exit",
 const int MENU_SIZE_TESTS = sizeof(MENU_TESTS) / sizeof(MENU_TESTS[0]);
 
 int main() {
-    //LinkedList<int>* a = new LinkedList<int>();
-//    int c[] = {1, 2, 3};
-//    DynamicArray<int>* a = new DynamicArray<int>(c, 3);
-////    DynamicArray<int>* a = new DynamicArray<int>(3);
-//    std::cout << "Hello, World1!" << std::endl;
-//    a->Resize(2);
-////    a->InsertAt(4, 1);
-//    std::cout << "Hello, World2!" << std::endl;
-////    a->Prepend(1);
-////    std::cout << "Hello, World3!" << std::endl;
-//    int b = a->Get(1);
-//    std::cout << "Hello, World4!" << std::endl;
-//    cout << b << endl;
-//    char *info[]= {"a"};
-//    Person s1 = Person(info);
-//    testIntQueque();
-//    complex a = complex(1, 2);
-//    cout << a << endl;
-//    testRealQueque();
-//    testComplexQueque();
-//    testCharQueque();
-//    testPersonQueque();
-//    std::cout << "Hello, World!" << std::endl;
     int menu;
     do {
         menu = dialog(MENU, MENU_SIZE);
