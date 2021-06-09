@@ -2,5 +2,8 @@ cmake_minimum_required(VERSION 3.17)
 project(lab2_1)
 
 set(CMAKE_CXX_STANDARD 11)
+add_subdirectory(boost/googletest)
 
-add_executable(lab2_1 main.cpp complex.cpp complex.h LInkedList.cpp LInkedList.h Sequence.h LinkedListSequence.h DynamicArray.h ArraySequence.h Queque.h Student.h tests.cpp tests.h)
+include_directories(boost/googletest/googletest/include)
+add_executable(lab2_1 main.cpp complex.cpp complex.h LInkedList.cpp LInkedList.h Sequence.h LinkedListSequence.h DynamicArray.h ArraySequence.h Queque.h Student.h tests.cpp tests.h vector.h test_Q.cpp)
+target_link_libraries(lab2_1 gtest)
